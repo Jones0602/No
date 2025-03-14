@@ -10,9 +10,10 @@ public class ListaApplication {
 
     public static void main(String[] args) {
         Lista lista = new Lista();
-        lista.adicionarNo(10);
-        lista.adicionarNo(20);
-        lista.adicionarNo(30);
-        lista.imprimirLista();
+        System.out.println(lista.estaVazia());
+        lista.inserePrimeiro(10);
+        lista.inserePrimeiro(20);
+        lista.mostrar();
+        System.out.println("REMOVI PRIMEIRO O: " + lista.removePrimeiro().getNumeroNo());
     }
 }
